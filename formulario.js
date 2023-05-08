@@ -1,3 +1,5 @@
+//Este codigo continua con las funciones y validaciones de los datos ingresados en el formulario como lo son el nombre, la edad, la nacionalidad
+
 // Se selecciona el formulario
 var formulario = document.querySelector("#form");
 

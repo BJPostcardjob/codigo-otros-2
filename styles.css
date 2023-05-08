@@ -1,9 +1,11 @@
+/*añadir etiquetas como practica para explicar reglas de este css*/
 body {
   background: #f0c27b; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f0c27b, #4b1248); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #474440, #4b1248); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #f0c27b, #4b1248); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/*Estilos Formulario*/
 .formulario {
   padding: 20px;
   display: flex;
@@ -11,16 +13,19 @@ body {
   width: 400px;
 }
 
+/*Estilos de input-select del formulario*/
 .formulario input, select {
   border: none;
   height: 20px;
   border-radius: 5px;
 }
 
+/*Estilos en mensaje de error*/
 .error {
   background-color: red;
 }
 
+/*Estilos para elementos de lista de invitados*/
 .elemento-lista {
   color: #4b1248;
   font-family: Verdana;
@@ -32,6 +37,7 @@ body {
   margin: 20px
 }
 
+/* Estilos para los input de los elementos de la lista de invitados */
 .elemento-lista input {
   border: none;
   background: none;

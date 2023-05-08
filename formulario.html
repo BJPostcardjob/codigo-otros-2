@@ -5,18 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Enlace a CSS -->
   <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
   <title>Formulario</title>
 </head>
+
 <body>
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
+  <!--Se añadio un ID al formulario para identificarlo-->
+  <form class="formulario" id="form">
     Nombre <input type="text" name="name" id="name">
-    <br />
+    <br>
     Edad <input type="number" name="age" id="age">
-    <br />
+    <br>
 
     Nacionalidad
     <select name="nationality" id="nationality">
@@ -25,15 +29,23 @@
       <option value="per">Peruana</option>
       <option value="vnzl">Venezolana</option>
     </select>
-    <br />
-    <input type="submit">
+    <br>
+
+    <!-- Se añadio un boton que limpie las entradas ingresadas al formulario -->
+    <button type="button" onclick="limpiarFormulario()">Limpiar</button>
+
+    <!-- Se cambio de submit a "button" para el preparar el formulario en lugar de enviarlo directamente al hacer click -->
+    <button type="button" onclick="agregarInvitado()">Enviar</button>
   </form>
 
   <div>
     <h2>Lista de invitados</h2>
 
+    <!-- Se añadio un ID a la lista para identificarla-->
+    <div id="lista-invitados"></div>
   </div>
 
+  <!-- Se añadio el enlace a js-->
   <script src="../formulario.js"></script>
 </body>
 
